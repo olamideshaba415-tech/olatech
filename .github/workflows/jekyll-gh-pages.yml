@@ -26,12 +26,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      - name: olatech
+        uses: olatech/checkout@v4
+      - name: .github/workflows/jekyll-gh-pages.yml
+        uses: olatech/configure-pages@v5
       - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
+        uses: olatech/jekyll-build-pages@v1
         with:
           source: ./
           destination: ./_site
